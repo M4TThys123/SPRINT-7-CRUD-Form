@@ -15,83 +15,95 @@
             <h1>FDND Tribe</h1>
         </header>
     <main>
-        <div class="form-container">
-            <form id="createStudentForm" action="https://tribe.api.fdnd.nl/v1/member" method="POST">
-                <h2>Studenten toevoegen</h2>
-
-                <div></div>
-
-                <!-- SquadId -->
-                <div class="modal__close close-modal" title="Close">
-                    <i class='bx bx-x'></i>
+        <div class="modal-wrapper">
+            <dialog id="modal" class="modal">
+                <div class="form-container">
+                    <form id="createStudentForm" action="https://tribe.api.fdnd.nl/v1/member" method="POST">
+                        <h2>Studenten toevoegen</h2>
+    
+                        <div></div>
+    
+                        <!-- SquadId -->
+                        <div class="modal__close close-modal" title="Close">
+                            <i class='bx bx-x'></i>
+                        </div>
+    
+                        <div class="form-group">
+                            <label for="squadId">SquadId:</label>
+                            <input type="number" name="squadId" id="squadId">
+                        </div>
+    
+                        <!-- Type -->
+                        <div class="form-group">
+                            <label for="type">Type:</label>
+                            <input type="text" name="type" id="type">
+                        </div>
+    
+                        <!-- Nickname -->
+                        <div class="form-group">
+                            <label for="nickname">Nickname:</label>
+                            <input type="text" name="nickname" id="nickname" >
+                        </div>
+    
+                        <!-- Name -->
+                        <div class="form-group">
+                            <label for="name">Name:</label>
+                            <input type="text" name="name" id="name" required>
+                        </div>
+    
+                        <!-- Prefix -->
+                        <div class="form-group">
+                            <label for="prefix">Prefix:</label>
+                            <input type="text" name="prefix" id="prefix" >
+                        </div>
+    
+                        <!-- Surname -->
+                        <div class="form-group">
+                            <label for="surname">Surname:</label>
+                            <input type="text" name="surname" id="surname" required>
+                        </div>
+    
+                        <!-- Avatar -->
+                        <div class="form-group">
+                            <label for="avatar">Avatar:</label>
+                            <input type="url" name="avatar" id="avatar" >
+                        </div>
+    
+                        <!-- GithubHandle -->
+                        <div class="form-group">
+                            <label for="githubHandle">GithubHandle:</label>
+                            <input type="text" name="githubHandle" id="githubHandle" >
+                        </div>
+    
+                        <!-- Bio -->
+                        <div class="form-group">
+                            <label for="bio">Bio:</label>
+                            <input type="text" name="bio" id="bio" >
+                        </div>
+    
+                        <!-- Url -->
+                        <div class="form-group">
+                            <label for="url">Url:</label>
+                            <input type="url" name="url" id="url" >
+                        </div>
+    
+                        <!-- Submit Button -->
+                        <button type="submit" class="toevoegen">Toevoegen</button>
+                        <button class="sluiten">Sluiten</button>
+                    </form>
                 </div>
-                <div class="form-group">
-                    <label for="squadId">SquadId:</label>
-                    <input type="number" name="squadId" id="squadId" required>
-                </div>
-
-                <!-- Type -->
-                <div class="form-group">
-                    <label for="type">Type:</label>
-                    <input type="text" name="type" id="type" required>
-                </div>
-
-                <!-- Nickname -->
-                <div class="form-group">
-                    <label for="nickname">Nickname:</label>
-                    <input type="text" name="nickname" id="nickname" required>
-                </div>
-
-                <!-- Name -->
-                <div class="form-group">
-                    <label for="name">Name:</label>
-                    <input type="text" name="name" id="name" required>
-                </div>
-
-                <!-- Prefix -->
-                <div class="form-group">
-                    <label for="prefix">Prefix:</label>
-                    <input type="text" name="prefix" id="prefix" required>
-                </div>
-
-                <!-- Surname -->
-                <div class="form-group">
-                    <label for="surname">Surname:</label>
-                    <input type="text" name="surname" id="surname" required>
-                </div>
-
-                <!-- Avatar -->
-                <div class="form-group">
-                    <label for="avatar">Avatar:</label>
-                    <input type="url" name="avatar" id="avatar" required>
-                </div>
-
-                <!-- GithubHandle -->
-                <div class="form-group">
-                    <label for="githubHandle">GithubHandle:</label>
-                    <input type="text" name="githubHandle" id="githubHandle" required>
-                </div>
-
-                <!-- Bio -->
-                <div class="form-group">
-                    <label for="bio">Bio:</label>
-                    <input type="text" name="bio" id="bio" required>
-                </div>
-
-                <!-- Url -->
-                <div class="form-group">
-                    <label for="url">Url:</label>
-                    <input type="url" name="url" id="url" required>
-                </div>
-
-                <!-- Submit Button -->
-                <button type="submit" class="toevoegen">Toevoegen</button>
-                <button class="sluiten">Sluiten</button>
-            </form>
-        </div> 
-
-        <section class="members">
-        </section>
+            </dialog> 
+        </div>
+        
+        <article>
+            <div class="article-header flex">
+                <h2>Studenten</h2>
+                <button class="open-button toevoegen">Student Toevoegen</button>
+            </div>
+            <section class="members">
+            </section>
+        </article>
+        
     </section>
   </main>
 </body>

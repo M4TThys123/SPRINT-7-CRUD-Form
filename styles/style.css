@@ -17,6 +17,14 @@
     display: flex;
 }
 
+.none{
+  display: none;
+}
+.block{
+  display: block;
+}
+
+
 button{
     cursor: pointer;
     border: none;
@@ -48,27 +56,40 @@ header i{
     font-size: 42px;
 }
 
+/* Main */
+main{
+  padding: 1em;
+}
+/* Model */
+/* .modal-wrapper{
+  display: grid;
+  place-items: center;
+} */
+
+.modal {
+    /* position: absolute; */
+     box-shadow: 0 0 0 100vw rgb(0 0 0 / 0.5);
+     border: none;
+}
+
+.modal::backdrop {
+     background: rgb(0 0 0 / 0.5);
+     opacity: 0;
+}
+
+.modal[open] {
+  animation: slide-up 1000ms forwards, fade-in 500ms forwards;
+}
+
+.modal[closing] {
+  display: block;
+  pointer-events: none;
+  inset: 0;
+  animation: fade-out 500ms forwards;
+}
+
+
 /* Form */
-.form-container::before{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: hsla(var(--hue), 18%, 75%, .8);
-    content: '';
-    display: block;
-    z-index: 2;
-}
-
-.form-container{
-    top: 0;
-    left: 0;
-    display: grid;
-    align-items: flex-end;
-    transition: all .3s;
-
-    /* visibility: hidden; */
-    /* opacity: 0; */
-}
 form {
     background-color: #fff;
     max-width: 48rem;
@@ -79,7 +100,7 @@ form {
     display: grid;
     grid-template-columns: 1fr;
     gap: 2em;
-    position: relative;
+    /* position: relative; */
     z-index: 3;
   }
 
@@ -107,8 +128,6 @@ h1{
     text-decoration-line: underline;
     margin-left: 5px;
 }
-
-
 .form-group label {
     display: inline-block;
     margin-bottom: .5rem;
@@ -123,9 +142,6 @@ h1{
     padding: 0.5rem;
   }
 
- 
-
-  
   .toevoegen{
     background-color: var(--blauw);
     color: #FFF;
@@ -142,6 +158,57 @@ h1{
     font-weight: 500;
   }
 
+/* Render article */
+.article-header{
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2.5em;
+}
+.article-header button{
+  width: 266px;
+}
+.members{
+  margin-top: 3em;
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+.member{
+  padding: 2rem;
+  background-color: var(--ligt-groen);
+  text-align: center;
+  color: var(--blauw);
+}
+
+/* Animaties */
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes slide-up {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+
 /* Big screen */
   @media (min-width: 40rem){
     form{
@@ -149,4 +216,14 @@ h1{
         grid-template-columns: 1fr 1fr;
 
     }
+    
+    main{
+      max-width: 1200px;
+      margin: auto;
+      
+    }
+    .modal{
+      top: 25%;
+      left: 25%;
+      position: absolute;
 }
