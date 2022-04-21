@@ -12,7 +12,7 @@
 
 
 ## Beschrijving
-![Wireflow](https://github.com/M4TThys123/SPRINT-8-Coding-the-Curbs/blob/main/assets/IMG_2139.JPG)
+![Wireflow](https://github.com/M4TThys123/SPRINT-7-CRUD-Form/blob/main/assets/Schermafbeelding%202022-04-21%20om%2007.15.30.png)
 [🌐 Live Versie](https://m4tthys123.github.io/SPRINT-7-CRUD-Form/)
 
 
