@@ -1,9 +1,7 @@
-> _Fork_ deze leertaak en ga aan de slag. Onderstaande outline ga je gedurende deze taak in jouw eigen GitHub omgeving uitwerken. De instructie vind je in: [docs/INSTRUCTIONS.md](docs/INSTRUCTIONS.md)
-
-# Titel
+# 🚀 CRUD Form V1
 <!-- Geef je project een titel en schrijf in één zin wat het is -->
 
-## Inhoudsopgave
+## 📙 Inhoudsopgave
 
   * [Beschrijving](#beschrijving)
   * [Kenmerken](#kenmerken)
@@ -12,21 +10,50 @@
   * [Bronnen](#bronnen)
   * [Licentie](#licentie)
 
+
 ## Beschrijving
-<!-- In de Beschrijving staat hoe je project er uit ziet, hoe het werkt en wat je er mee kan. -->
-<!-- Voeg een mooie poster visual toe 📸 -->
-<!-- Voeg een link toe naar Github Pages 🌐-->
+![Wireflow](https://github.com/M4TThys123/SPRINT-8-Coding-the-Curbs/blob/main/assets/IMG_2139.JPG)
+[🌐 Live Versie](https://m4tthys123.github.io/SPRINT-7-CRUD-Form/)
+
 
 ## Kenmerken
-<!-- Bij Kenmerken staat welke technieken zijn gebruikt en hoe. Wat is de HTML structuur? Wat zijn de belangrijkste dingen in CSS? Wat is er met Javascript gedaan en hoe? Misschien heb je een framwork of library gebruikt? -->
 
-## Installatie
+- 💻 Visual Studio Code
+- ✍️ Illustrator
+- 🤳 Photoshop
+- ✍️ Pen & Papier
 
-## Gebruik
+**Code Skills:**
 
-## Bronnen
+- 💀 HTML5
+- 🧍 CSS3
+- ⚽ JavaScript
+- 💾 API data
+- 😜 Data rendering
+- 
+## 💥 Installatie
 
-## Licentie
+Installeren met de Terminal
+
+```
+git clone https://github.com/M4TThys123/SPRINT-7-CRUD-Form.git
+cd SPRINT-7-CRUD-Form
+```
+
+Installeren met SSH
+
+```
+git@https://github.com/https://github.com/M4TThys123/SPRINT-7-CRUD-Form.git
+cd SPRINT-7-CRUD-Form
+```
+
+## 🚊 Gebruik
+
+n.v.t
+
+## 🥇 Bronnen
+
+## 🦹‍♂️ Licentie
 
 ![GNU GPL V3](https://www.gnu.org/graphics/gplv3-127x51.png)
 
